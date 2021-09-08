@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,500;0,700;0,900;1,500;1,700;1,900&display=swap");
+
+:root {
+  --bl: hsl(221, 61%, 33%);
+  --PaleBlue: hsl(225, 100%, 94%);
+  --BrightBlue: hsl(245, 75%, 52%);
+  --VeryPaleBlue: hsl(225, 100%, 98%);
+  --DesaturatedBlue: hsl(224, 23%, 55%);
+  --DarkBlue: hsl(223, 47%, 23%);
+}
+
+body {
+  font-family: "Red Hat Display";
+  text-align: center;
+  background: var(--PaleBlue);
+  background-image: url(/images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+}
+.card {
+  width: 450px;
+  height: 700px;
+  margin: 5% auto;
+  border-radius: 20px;
+  background: white;
+  overflow: hidden;
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+}
+.card h1 {
+  font-weight: 900;
+  font-size: 32px;
+  color: var(--DarkBlue);
+  padding-top: 25px;
+}
+.card img {
+  /* display: block; */
+  max-width: 100%;
+  height: auto;
+  justify-self: flex-start;
+  margin: 0;
+}
+.card p {
+  width: 70%;
+  margin: auto;
+  color: var(--DesaturatedBlue);
+}
+
+p {
+  font-size: 16px;
+  font-weight: 500;
+}
+.plan {
+  width: 80%;
+  background: var(--VeryPaleBlue);
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: 00px auto;
+  padding: 30px;
+  border-radius: 10px;
+  grid-template-columns: 1fr 2fr 3fr;
+  grid-template-rows: 1fr;
+}
+.plan h3 {
+  color: var(--DarkBlue);
+  margin: 0;
+  font-weight: 900;
+}
+.plan img {
+  display: block;
+  justify-self: center;
+}
+
+button {
+  padding: 17px;
+  width: 80%;
+  border-radius: 10px;
+  background: var(--BrightBlue);
+  color: var(--VeryPaleBlue);
+  font-weight: 700;
+  font-size: medium;
+  box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.288);
+  border: none;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--DesaturatedBlue);
+}
+
+#cancel {
+  margin: 30px;
+}
+a {
+  font-weight: 700;
+  color: var(--BrightBlue);
+}
+a:hover {
+  color: var(--DarkBlue);
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    background-image: url(/images/pattern-background-mobile.svg);
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.cancel {
+  color: var(--DarkBlue);
+  margin-top: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
