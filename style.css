@@ -107,6 +107,15 @@ a:hover {
   .card{
     width:90%;
   }
+  h3{
+    font-size: 18px;
+  }
+  h1{
+    font-size:26px;
+  }
+  button {
+    margin-top: 20px;
+  }
 }
 
 .attribution {
