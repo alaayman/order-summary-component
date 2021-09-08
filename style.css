@@ -17,7 +17,7 @@ body {
   background-repeat: no-repeat;
 }
 .card {
-  width: 450px;
+  max-width: 450px;
   height: 700px;
   margin: 5% auto;
   border-radius: 20px;
@@ -55,7 +55,7 @@ p {
   justify-content: center;
   align-content: center;
   align-items: center;
-  margin: 00px auto;
+  margin: 15px auto;
   padding: 30px;
   border-radius: 10px;
   grid-template-columns: 1fr 2fr 3fr;
@@ -79,7 +79,7 @@ button {
   color: var(--VeryPaleBlue);
   font-weight: 700;
   font-size: medium;
-  box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.288);
+  box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.2);
   border: none;
   margin-top: 40px;
   cursor: pointer;
@@ -103,6 +103,9 @@ a:hover {
 @media only screen and (max-width: 375px) {
   body {
     background-image: url(/images/pattern-background-mobile.svg);
+  }
+  .card{
+    width:90%;
   }
 }
 
