@@ -9,6 +9,12 @@
   --DarkBlue: hsl(223, 47%, 23%);
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Red Hat Display";
   text-align: center;
@@ -18,18 +24,18 @@ body {
 }
 .card {
   max-width: 450px;
-  height: 700px;
+  /* height: 650px; */
   margin: 5% auto;
   border-radius: 20px;
   background: white;
   overflow: hidden;
-  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2);
 }
 .card h1 {
   font-weight: 900;
-  font-size: 32px;
+  font-size: 2em;
   color: var(--DarkBlue);
-  padding-top: 25px;
+  padding: 20px;
 }
 .card img {
   /* display: block; */
@@ -47,41 +53,45 @@ body {
 p {
   font-size: 16px;
   font-weight: 500;
+  margin: 20px;
 }
 .plan {
   width: 80%;
-  background: var(--VeryPaleBlue);
+  background: hsl(225, 98%, 97%);
   display: grid;
   justify-content: center;
   align-content: center;
   align-items: center;
   margin: 15px auto;
-  padding: 30px;
+  padding: 15px;
   border-radius: 10px;
-  grid-template-columns: 1fr 2fr 3fr;
-  grid-template-rows: 1fr;
+  grid-template-columns: 2fr 3fr 3fr;
 }
 .plan h3 {
   color: var(--DarkBlue);
   margin: 0;
   font-weight: 900;
+  font-size: 16px;
 }
 .plan img {
   display: block;
   justify-self: center;
 }
 
+.price {
+  float: left;
+}
 button {
-  padding: 17px;
+  padding: 15px;
   width: 80%;
   border-radius: 10px;
   background: var(--BrightBlue);
   color: var(--VeryPaleBlue);
   font-weight: 700;
-  font-size: medium;
+  font-size: 0.9em;
   box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.2);
   border: none;
-  margin-top: 40px;
+  margin-top: 20px;
   cursor: pointer;
 }
 
@@ -104,17 +114,20 @@ a:hover {
   body {
     background-image: url(/images/pattern-background-mobile.svg);
   }
-  .card{
-    width:90%;
+  .card {
+    width: 90%;
   }
-  .plan h3{
-    font-size:16px;
+  .plan h3 {
+    font-size: 12px;
   }
-  .card h1{
-    font-size:24px;
+  .card h1 {
+    font-size: 22px;
   }
   button {
     margin-top: 20px;
+  }
+  P {
+    font-size: 12px;
   }
 }
 
@@ -128,7 +141,7 @@ a:hover {
 
 .cancel {
   color: var(--DarkBlue);
-  margin-top: 20px;
+  margin: 20px 0 30px 0;
   font-weight: 700;
   cursor: pointer;
 }
